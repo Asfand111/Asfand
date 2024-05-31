@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable using</title>
+    <style>
+        body{
+            background: plum;
+        }
+        :root{
+            --box-color:blue ;
+            --back-color:purple;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            color: var(--box-color);
+            margin: 20px;
+            border: 2px solid red;
+            width: 200px;
+            height: 200px;
+        }
+        .container{
+            justify-content: center;
+            background-color: var(--back-color);
+            border: 2px solid red;
+            display: flex;
+        }
+        .container1{
+            display: flex;
+            justify-content: center;
+            border: 2px solid pink;
+            background-color: aqua;
+        }
+        .it{
+           color: rgb(0, 0, 0);
+        } 
+        .container2{
+            display: flex;
+            margin: auto;
+            flex-direction: column;
+            text-align: center;
+            font-size: 30px;
+            margin: 10px;
+            border: 2px solid greenyellow;
+        }
+        ::placeholder{
+            text-align: center;
+            font-size: 25px;
+        }
+        input{
+            font-size: 25px;
+            margin: 10px;border-radius: 10px;
+
+            border: 2px solid rgb(255, 19, 19);
+        }
+        .foam{
+            font-size: 25px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, expedita porro dicta iste
+            quam nisi ex nemo quo voluptatum delectus aliquam placeat possimus rem cupiditate necessitatibus? Laborum
+            accusantium non nihil enim natus recusandae aliquam.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, expedita porro dicta iste
+            quam nisi ex nemo quo voluptatum delectus aliquam placeat possimus rem cupiditate necessitatibus? Laborum
+            accusantium non nihil enim natus recusandae aliquam.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, expedita porro dicta iste
+            quam nisi ex nemo quo voluptatum delectus aliquam placeat possimus rem cupiditate necessitatibus? Laborum
+            accusantium non nihil enim natus recusandae aliquam.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, expedita porro dicta iste
+            quam nisi ex nemo quo voluptatum delectus aliquam placeat possimus rem cupiditate necessitatibus? Laborum
+            accusantium non nihil enim natus recusandae aliquam.</div>
+    </div>
+    <div class="container1">
+        <ul >
+            <li>this is a website</li>
+            <li>this is a website</li>
+            <ul class="pp">
+                <li class="it">good thinking good health</li>
+                <li class="it">good thinking good health</li>
+            </ul>
+            <li>this is a website</li>
+            <li>this is a website</li>
+            <li>this is a website</li>
+        </ul>
+    </div>
+    <div class="container2">
+        <div class="foam">
+           email <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="foam">
+Paswword :<input type="text" placeholder="Enter your password">
+        </div>
+        <div class="foam">
+Adress :<input type="text" placeholder="enter your adress">
+        </div>
+        <div class="foam">
+Remarks :<input type="text" placeholder="enter your remarks" >
+        </div>
+    </div>
+</body>
+
+</html>
